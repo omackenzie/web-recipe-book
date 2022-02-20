@@ -1,0 +1,16 @@
+{
+  "name": "web-recipe-book",
+  "version": "1.0.0",
+  "description": "Base project for Web Recipe Book",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install &&  cd ../backend && npm install",
+    "serve:client": "cd frontend && npm run dev",
+    "serve:server": "cd backend && npm run server",
+    "dev": "concurrently \"npm run serve:server\" \"npm run serve:client\""
+  },
+  "author": "Oscar MacKenzie",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
